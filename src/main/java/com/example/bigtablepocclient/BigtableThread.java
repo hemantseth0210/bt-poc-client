@@ -15,8 +15,8 @@ public class BigtableThread implements Runnable{
     public void run(){
         RestTemplate restTemplate = new RestTemplate();
         //final String baseUrl = "http://localhost:8080/processNcpEligibleUpcsByPrefixPostWithRedisCache";
-        //final String baseUrl = "http://104.197.166.156:8080/processNcpEligibleUpcsByPrefixPostWithRedisCache";
-        final String baseUrl = "http://104.197.166.156:8080/processNcpEligibleUpcsByPrefixPostWithMemcached";
+        final String baseUrl = "http://104.197.166.156:8080/processNcpEligibleUpcsByPrefixPostWithRedisCache";
+        //final String baseUrl = "http://104.197.166.156:8080/processNcpEligibleUpcsByPrefixPostWithMemcached";
         URI uri = null;
         try {
             uri = new URI(baseUrl);
